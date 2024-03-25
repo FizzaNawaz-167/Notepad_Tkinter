@@ -1,0 +1,35 @@
+CREATE DATABASE Notepad;
+USE Notepad;
+
+CREATE TABLE notepad_ (
+rescent_path VARCHAR(100),
+ID INT PRIMARY KEY,
+word_wrap VARCHAR(10),
+status_bar VARCHAR(10),
+current_font VARCHAR(50),
+new_font INT,
+font_name VARCHAR(50),
+font_size INT,
+font_style VARCHAR(10),
+new_size INT
+);
+INSERT INTO notepad_ VALUES ("", 167, "char", "yes", "Helvetica", 10, "Helvetica", 12, "italic", 19);
+
+CREATE TABLE notepad_fonts (
+	font  VARCHAR(30), 
+    font_style VARCHAR(20), 
+    font_size INT
+);
+INSERT INTO notepad_fonts VALUES 
+("Helvetica", "bold", 10),
+("Corbel", "italic", 12),
+("Ebrima", "underline", 14),
+("Arial", "/", 16),
+("Courier", "/", 18),
+("Consolas", "/",20 ),
+("MS Sans Serif", "/", 22),
+("Webdings", "/", 24),
+("Bell MT", "/", 26),
+("Book Antiqua", "/", 28),
+("Dubai", "/", 30);
+
